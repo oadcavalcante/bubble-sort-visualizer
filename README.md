@@ -1,41 +1,80 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/pages/api-reference/create-next-app).
+# Bubble Sort Visualizer
+![scrrenshot](https://github.com/oadcavalcante/bubble-sort-visualizer/blob/main/public/images/screenshot.png)
 
-## Getting Started
+Um visualizador interativo e fácil de usar do algoritmo Bubble Sort, desenvolvido com Next.js e Tailwind CSS. Este projeto permite entender visualmente o funcionamento de um dos algoritmos de ordenação mais simples e fundamentais.
 
-First, run the development server:
+## 🚀 Tecnologias
+* **Next.js:** Framework React para renderização rápida e desenvolvimento de aplicações web.
+* **TypeScript:** Superset de JavaScript que adiciona tipos estáticos.
+* **Tailwind CSS:** Framework de CSS para estilização rápida e responsiva.
 
+## 📖 O que é o Bubble Sort?
+Bubble Sort é um algoritmo de ordenação simples que funciona comparando pares de elementos adjacentes e trocando-os se estiverem na ordem incorreta. O processo é repetido até que o array esteja ordenado.
+
+## Como Funciona?
+1. Iniciamos no começo do array e comparamos o primeiro par de elementos.
+2. Se o elemento atual é maior que o próximo, eles trocam de lugar.
+3. Movemos para o próximo par e repetimos o processo.
+4. Após cada "passada" pelo array, o próximo maior elemento "borbulha" para sua posição correta no final do array.
+5. O processo é repetido até que não haja mais trocas necessárias.
+
+## Complexidade:
+**Pior e caso médio:** O(n²), pois precisa comparar cada par em cada passada.
+
+**Melhor caso:** O(n), se o array já estiver ordenado.
+
+* Exemplo de Bubble Sort
+1. Considere o array: [5, 3, 8, 4, 2]
+2. Comparação de [5, 3]: troca → [3, 5, 8, 4, 2]
+3. Comparação de [5, 8]: sem troca
+4. Comparação de [8, 4]: troca → [3, 5, 4, 8, 2]
+5. Comparação de [8, 2]: troca → [3, 5, 4, 2, 8]
+
+## 💻 Como Usar o Visualizador
+Este visualizador permite que você veja o processo do Bubble Sort em ação. Ao clicar no botão "Iniciar Ordenação", o array inicial é ordenado passo a passo, destacando visualmente cada troca.
+
+## 🛠️ Instalação e Uso
+Para instalar e executar o projeto localmente, siga estas etapas:
+
+1. Clone o repositório:
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/seu-usuario/bubble-sort-visualizer.git
+cd bubble-sort-visualizer
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+3. Instale as dependências:
+```bash
+npm install
+```
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+3. Inicie o servidor de desenvolvimento:
+```bash
+npm run dev
+```
 
-[API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+5. Abra no navegador:
+Acesse http://localhost:3000 para ver o visualizador em ação.
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/pages/building-your-application/routing/api-routes) instead of React pages.
+## 🖌️ Personalização
+Você pode modificar o array inicial diretamente no componente BubbleSortVisualizer.tsx ou alterar a velocidade da animação ajustando o tempo de atraso em setTimeout.
 
-This project uses [`next/font`](https://nextjs.org/docs/pages/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Exemplo:
+```typescript
+await new Promise((resolve) => setTimeout(resolve, 200)); // Atraso de 200ms
+```
 
-## Learn More
+## 📂 Estrutura do Projeto
+```plaintext
+.
+├── components
+│   └── BubbleSortVisualizer.tsx  # Componente do visualizador
+├── pages
+│   └── index.tsx                # Página principal do app
+└── styles
+    └── globals.css              # Estilos globais (Tailwind)
+```
 
-To learn more about Next.js, take a look at the following resources:
+## 🤝 Contribuições
+Sinta-se à vontade para abrir issues ou enviar pull requests para aprimorar o visualizador!
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn-pages-router) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/pages/building-your-application/deploying) for more details.
-# bubble-sort-visualizer
+Divirta-se explorando o Bubble Sort e aprendendo mais sobre algoritmos de ordenação com este visualizador interativo!
