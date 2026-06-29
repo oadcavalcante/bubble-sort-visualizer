@@ -1,4 +1,55 @@
+<div align="center">
+
+🔢
+
 # Bubble Sort Visualizer
+
+**Visualizador interativo do algoritmo Bubble Sort construído com Next.js.**
+
+<br />
+
+[![Repositório público](https://img.shields.io/badge/repo-público-2ea44f?style=flat-square&logo=github&logoColor=white)](https://github.com/oadcavalcante/bubble-sort-visualizer)
+
+<br />
+
+[![Next.js 15](https://img.shields.io/badge/Next.js-000000?style=flat-square&logoColor=fff&logo=nextdotjs)](https://github.com/oadcavalcante/bubble-sort-visualizer) [![React 19 RC](https://img.shields.io/badge/React-61DAFB?style=flat-square&logoColor=000&logo=react)](https://github.com/oadcavalcante/bubble-sort-visualizer) [![Tailwind CSS 3](https://img.shields.io/badge/Tailwind%20CSS-06B6D4?style=flat-square&logoColor=fff&logo=tailwindcss)](https://github.com/oadcavalcante/bubble-sort-visualizer)
+
+[![TypeScript 5](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logoColor=fff&logo=typescript)](https://github.com/oadcavalcante/bubble-sort-visualizer)
+
+<br />
+
+[Stack completa ↓](#stack)
+
+<br />
+
+[Documentação](https://github.com/oadcavalcante/bubble-sort-visualizer/blob/main/README.md) · [Deploy](#deploy) · [Issues](https://github.com/oadcavalcante/bubble-sort-visualizer/issues)
+
+</div>
+
+## Features
+
+- ✨ Animação passo a passo do Bubble Sort
+- 🚀 Destaque visual de comparações e trocas
+- ⚡ Botão para iniciar ordenação
+- 🎯 Velocidade de animação configurável
+- 🔧 Explicação didática do algoritmo no README
+- 📦 Interface responsiva com Tailwind CSS
+
+## Getting Started
+
+| Ambiente | Comando / Link |
+|----------|----------------|
+| Primeira vez | `npm install && npm run dev` |
+| Documentação | [README](https://github.com/oadcavalcante/bubble-sort-visualizer/blob/main/README.md) |
+| Produção | N/A |
+
+## Stack
+
+- **Frontend:** Next.js 15, React 19 RC, Tailwind CSS 3
+- **Outros:** TypeScript 5
+
+---
+
 ![scrrenshot](https://github.com/oadcavalcante/bubble-sort-visualizer/blob/main/public/images/screenshot.png)
 
 Um visualizador interativo e fácil de usar do algoritmo Bubble Sort, desenvolvido com Next.js e Tailwind CSS. Este projeto permite entender visualmente o funcionamento de um dos algoritmos de ordenação mais simples e fundamentais.
